@@ -25,9 +25,6 @@ userdebug_or_eng(`
   allow audioserver self:process ptrace;
 ')
 
-allow mediaserver mediaserver_tmpfs file { read write execute }
-allow audioserver audioserver_tmpfs file { read write execute }
-
 allow audioserver audio_device:dir r_dir_perms;
 allow audioserver audio_device:chr_file rw_file_perms;
 
