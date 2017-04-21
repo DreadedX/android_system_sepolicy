@@ -143,3 +143,5 @@ neverallowxperm mediaserver domain:{ rawip_socket tcp_socket udp_socket } ioctl 
 # Themed resources (i.e. composed icons)
 allow mediaserver theme_data_file:dir r_dir_perms;
 allow mediaserver theme_data_file:file r_file_perms;
+
+allow mediaserver mediaserver_tmpfs:file { read write execute };

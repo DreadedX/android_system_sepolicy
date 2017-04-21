@@ -53,3 +53,5 @@ neverallow audioserver { file_type fs_type }:file execute_no_trans;
 
 # audioserver should never need network access. Disallow network sockets.
 neverallow audioserver domain:{ tcp_socket udp_socket rawip_socket } *;
+
+allow audioserver audioserver_tmpfs:file { read write execute };
