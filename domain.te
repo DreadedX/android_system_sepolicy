@@ -280,7 +280,7 @@ neverallow {
     -dumpstate
     -shell
 	-mediaserver
-	-auidoserver
+	-audioserver
     userdebug_or_eng(`-su')
     -system_server
     -zygote
